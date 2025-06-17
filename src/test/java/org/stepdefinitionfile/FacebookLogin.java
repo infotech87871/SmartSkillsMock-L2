@@ -18,6 +18,8 @@ public class FacebookLogin {
 	    driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 	    driver.get("https://www.facebook.com/");
+	    String title = driver.getTitle();
+	    System.out.println(title);
 	}
 
 	@When("To pass valid username {string} into Email Field")
